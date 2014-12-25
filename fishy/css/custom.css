@@ -1,0 +1,126 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+#title-aqua
+{
+    font-size: 70px;
+    text-align: center;
+    margin: 25px auto;
+}
+header
+{
+    background: url("../img/blue-wave.png") repeat-x;
+    padding-top: 80px;
+}
+#title-aqua span{
+    color: #00FFFF;
+}
+#main-menu
+{
+    bottom: 0px;
+}
+#main-menu ul{
+    padding: 0;
+    width: 755px;
+    height: 60px;
+    margin: 15px auto 2px auto;
+    border-spacing: 0px;
+
+}
+#main-menu ul li{
+    line-height: 58px;
+    text-align: center;
+    display:block;
+    width: 150px;
+    float: left;
+    list-style-type: none;
+    list-style-position: inside;
+    margin-right: 1px;
+    padding: 0px;
+    height: 100%;
+    background-color: #00FFFF;
+    -webkit-transition: ease 1s ;
+    -moz-transition: ease 1s ;
+    -ms-transition: ease 1s ;
+    -o-transition: ease 1s ;
+    transition: ease 1s ;
+}
+#main-content-wrapper
+{
+    width: 100%;
+    height: 1200px;
+
+}
+#main-content-actually
+{
+    height: 1100px;
+    width: 100%;
+    background-color: #999999;
+}
+#socials
+{
+    padding: 0;
+    height: 200px
+    background-color: #F0F0F0;
+    overflow: hidden;
+}
+#socials-placeholder
+{
+    width: 420px;
+    margin: auto;
+}
+.social-pic-item
+{
+    display: inline-block;
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-width: 0;
+    border-radius: 50%;
+    background-color: #999999;
+    -webkit-transition: ease 1s;
+    -moz-transition: ease 1s;
+    -ms-transition: ease 1s;
+    -o-transition: ease 1s;
+    transition: ease 1s;
+}
+.social-pic-item:hover
+{
+    background-color: aqua;
+}
+.social-pic-item>img
+{
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-left: calc(50% - 20px);
+}
+span.H
+{
+    text-transform:uppercase;
+}
+span.H.menu-item
+{
+    color: white;
+}
+#main-menu ul li:hover
+{
+    background-color: #00BFFF;
+}
+.pointed:hover
+{
+    cursor:pointer;
+}
+
+footer
+{   height:100px;
+    background-color: #999999;
+    background: url("../img/gray-wave.png") repeat-x;
+
+}
+dd span{
+    min-width: 100px;
+}

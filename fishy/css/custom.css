@@ -1,75 +1,108 @@
 *
 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
-#title-aqua
+body#primary{
+    background-color: #eee;
+    text-align: center;
+ }
+header
+ {
+    background: url("../img/blue-wave.png") repeat-x;
+    padding-top: 80px;
+    background-color: #fff;
+ }
+#main-header-text
 {
     font-size: 70px;
     text-align: center;
     margin: 25px auto;
+    background-color: #fff;
 }
-header
+.aqua
 {
-    background: url("../img/blue-wave.png") repeat-x;
-    padding-top: 80px;
+    color: #3A93FF;
 }
-#title-aqua span{
-    color: #00FFFF;
-}
-#main-menu
+.gray
 {
-    bottom: 0px;
+    color: gray;
 }
-#main-menu ul{
-    padding: 0;
-    width: 755px;
-    height: 60px;
-    margin: 15px auto 2px auto;
+.white
+{
+    color: white;
+}
+.primary-header-text
+{
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.secondary-header-text
+{
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#main-menu>ul{
+    z-index: 999999;
+    width: 70%;
+    min-width:505px;
+    height: 100px;
+    margin: 15px auto 0px auto;
     border-spacing: 0px;
+   /* background-color: #fff;*/
 
 }
-#main-menu ul li{
-    line-height: 58px;
+#main-menu>ul>li{
+    line-height: 100px;
     text-align: center;
     display:block;
-    width: 150px;
+    width: 19%;
+    min-width: 100px;
     float: left;
     list-style-type: none;
     list-style-position: inside;
     margin-right: 1px;
     padding: 0px;
     height: 100%;
-    background-color: #00FFFF;
+    background: url(../img/menu-blue-wave.png) repeat-x;
     -webkit-transition: ease 1s ;
     -moz-transition: ease 1s ;
     -ms-transition: ease 1s ;
     -o-transition: ease 1s ;
     transition: ease 1s ;
 }
+
 #main-content-wrapper
 {
-    width: 100%;
-    height: 1200px;
-
+    background-color: #fff;
+    width: 1000px;
+    margin: 0 auto;
 }
 #main-content-actually
 {
-    height: 1100px;
-    width: 100%;
-    background-color: #999999;
+    background-color: #fff;
 }
 #socials
 {
+    display: block;
     padding: 0;
-    height: 200px
-    background-color: #F0F0F0;
+    height: 200px;
+    background-color: #eee;
     overflow: hidden;
 }
 #socials-placeholder
 {
-    width: 420px;
-    margin: auto;
+    margin-top: 50px;
 }
 .social-pic-item
 {
@@ -80,7 +113,7 @@ header
     margin: 10px;
     border-width: 0;
     border-radius: 50%;
-    background-color: #999999;
+    background-color: #999;
     -webkit-transition: ease 1s;
     -moz-transition: ease 1s;
     -ms-transition: ease 1s;
@@ -89,27 +122,19 @@ header
 }
 .social-pic-item:hover
 {
-    background-color: aqua;
+    background-color: #3A93FF;
 }
 .social-pic-item>img
 {
     vertical-align: middle;
     width: 40px;
     height: 40px;
-    margin-left: calc(50% - 20px);
 }
-span.H
-{
-    text-transform:uppercase;
-}
-span.H.menu-item
+.inside-controls-text
 {
     color: white;
 }
-#main-menu ul li:hover
-{
-    background-color: #00BFFF;
-}
+
 .pointed:hover
 {
     cursor:pointer;
@@ -117,10 +142,188 @@ span.H.menu-item
 
 footer
 {   height:100px;
-    background-color: #999999;
+    width:100%;
+    background-color: #eee;
     background: url("../img/gray-wave.png") repeat-x;
-
+    line-height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+div#wrapper:before
+{
+    background-color: #ffffff;
 }
 dd span{
     min-width: 100px;
+}
+/*#feedback-form
+{
+    width: 300px;
+    display: inline-block;
+    float: right;
+    padding:10px;
+    margin: 20px 30px 0px 0px;
+
+}*/
+/*#map-address
+{
+    display: inline-block;
+    width: 60%;
+    min-width: 700px;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding:10px;
+    border: 1px solid red;
+}
+
+.address-left dl
+{
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+}*/
+form textarea
+{
+    height: 400px;
+}
+#reg-form *
+{
+    margin-left: 0px;
+}
+#reg-form input, #reg-form textarea
+ {
+
+     border: 1px solid gray;
+     background-color: #eeeeee;
+     line-height: 16px;
+     height: 20px;
+     margin-bottom: 10px;
+     resize: none;
+ }
+div.buttons.row
+{
+    margin-left: 0;
+}
+#reg-form textarea
+{
+    height: 400px;
+}
+#reg-form .form-button
+{   background-color: #3A93FF;
+    border: none;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+dl.span3
+{
+    margin-top: 10px;
+}
+dd>span{
+    display: inline-block;
+    width: 80px;
+    float: left;
+    text-align: left;
+}
+#main-menu ul li{
+    background-color: #3A93FF;
+}
+#anchor-button
+{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    bottom: 60px;
+    right: 8%;
+    position: fixed;
+    display: block;
+    z-index: 999;
+    background-color: #fff;
+    -webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s;
+    -ms-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    opacity: .7;
+}
+#anchor-button img
+{
+    vertical-align: top;
+}
+#anchor-button:hover
+{
+    background-color: #3A93FF;
+    opacity: 1;
+}
+#anchor-button, #anchor{
+    display: none;
+}
+#main-menu ul li:hover
+{
+    background-color: #00BFFF;
+}
+ul.submenu
+{
+    display: none;
+    background-color: transparent;
+    height: 50px;
+    margin-top: 0;
+}
+ul.submenu>li{
+    line-height: 50px;
+    text-align: center;
+    display:block;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    height:75%;
+    background-color: #3A93FF;
+    -webkit-transition: ease 1s ;
+    -moz-transition: ease 1s ;
+    -ms-transition: ease 1s ;
+    -o-transition: ease 1s ;
+    transition: ease 1s ;
+}
+li.dropdown:hover > ul.submenu
+{
+   display: block;
+}
+ul.submenu2
+{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    height: 50px;
+    margin-left: 200px;
+    margin-top: -40px;
+}
+ul.submenu2>li
+{
+    line-height: 50px;
+    text-align: center;
+    display:block;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    width: 100px;
+    height:75%;
+    background-color: #3A93FF;
+    -webkit-transition: ease 1s ;
+    -moz-transition: ease 1s ;
+    -ms-transition: ease 1s ;
+    -o-transition: ease 1s ;
+    transition: ease 1s ;
+}
+#menu-trigger:hover > ul.submenu
+{
+    display: block;
+}
+#menu-trigger2:hover > ul.submenu2
+{
+    display: block;
+}
+#content
+{
+    background-color: #fff;
 }

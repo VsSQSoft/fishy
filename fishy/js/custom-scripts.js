@@ -4,16 +4,25 @@
 
 $(document).ready( function()
     {
-        alert('123');
+        $(document).scroll(function(){
+
+            if($(document).scrollTop()> 150) $('#anchor-button').show(100);
+            else $('#anchor-button').hide();
+        });
         $('.ajax-clicker').click( function()
             {
-                var url = '../html/' + $(this).text().toLowerCase().trim()+'.html';
-                alert(url);
+                var url = '../html/' + $(this).children('span').text().toLowerCase().trim()+'.html';
                 var result_id = 'main-content-actually';
+                if (url ==='about us.html') {$('#main-content-wrapper').css("width", "100%");}
+                else{$('#main-content-wrapper').css("width", "1000px");}
+                alert(url);
+                /* НЕРАБОЧИЙ КОСТЫЛЬ */
+                //$('#main-menu ul li').css("background-color", "#3A93FF");
+                //$('#main-menu ul li:hover').css("background-color", "#00BFFF");
+                //$(this).css("background-color", "aqua");
                 AjaxRequest(result_id, url);
             });
-
-
+        AjaxRequest('main-content-actually','../html/gallery.html');
     });
 
 

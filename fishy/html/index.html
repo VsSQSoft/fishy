@@ -2,51 +2,66 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+
     <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
     <script type="text/javascript" src="../js/custom-scripts.js"></script>
     <title></title>
 </head>
-<body>
+<body id="primary">
+<a name="hat" class="anchor"></a>
 <header>
- <p class="pointed" id="title-aqua"> <span>AQUA</span>RIUM </p>
- <navbar id="main-menu">
-  <ul>
-   <li class="pointed ajax-clicker" onclick="AjaxRequest('main-content-actually','contacts.html')"> <span class="H menu-item">Test</span> </li>
-   <li class="pointed ajax-clicker"><span class="H menu-item">Products</span>  </li>
-   <li class="pointed ajax-clicker dropdown"><span class="H menu-item dropdown-toggle" data-toggle="dropdown">Gallery</span>  </li>
-   <li class="pointed ajax-clicker"><span class="H menu-item">Blog</span>  </li>
-   <li class="pointed ajax-clicker"><span class="H menu-item">Contacts</span>  </li>
-  </ul>
- </navbar>
+<p class="pointed" id="main-header-text"> <span class="aqua">AQUA</span>RIUM </p>
+<navbar id="main-menu">
+<ul>
+<li class="pointed ajax-clicker aqua"><span class="white text-uppercase">About us</span> </li>
+<li class="pointed ajax-clicker aqua"><span class="white text-uppercase">Products</span>  </li>
+<li class="pointed ajax-clicker aqua dropdown" id="menu-trigger1"><span class="white text-uppercase">Gallery</span>
+<ul class="submenu">
+<li class="pointed aqua"><span class="white text-uppercase">Position 1</span></li>
+<li class="pointed aqua dropdown" id="menu-trigger2"><span class="white text-uppercase">Position 2</span>
+<ul class="submenu2">
+<li class="pointed aqua dropdown"><span class="white text-uppercase">Position 2.1</span></li>
+<li class="pointed aqua dropdown"><span class="white text-uppercase">Position 2.2</span></li>
+<li class="pointed aqua dropdown"><span class="white text-uppercase">Position 2.3</span></li>
+</ul>
+</li>
+<li class="pointed aqua"><span class="white text-uppercase">Position 3</span></li>
+</ul>
+</li>
+<li class="pointed ajax-clicker aqua"><span class="white text-uppercase">Blog</span>  </li>
+<li class="pointed ajax-clicker aqua"><span class="white text-uppercase">Contacts</span>  </li>
+</ul>
+</navbar>
 </header>
- <div id="main-content-wrapper">
-  <div id="main-content-actually">
-
-  </div>
-
-
-<div id="socials">
-    <div id="socials-placeholder">
-     <div class=" pointed social-pic-item" id="facebook">
-         <img src="#" alt="facebook">
-     </div>
-     <div class=" pointed social-pic-item" id="twitter">
-         <img src="#" alt="twitter">
-     </div>
-     <div class=" pointed social-pic-item" id="google-plus">
-          <img src="#" alt="google+">
-     </div>
-     <div class=" pointed social-pic-item" id="instagram">
-        <img src="#" alt="instagramm">
-     </div>
-    </div>
+<div id="content">
+<div id="main-content-wrapper" class="container12">
+<div class="row span12 center-block" id="main-content-actually">
+</div>
+</div>
+<div class="row text-center" id="socials">
+<div id="socials-placeholder" class="text-center">
+<div class="pointed social-pic-item" id="facebook">
+<img src="../img/facebook.png" alt="facebook">
+</div>
+<div class=" pointed social-pic-item" id="twitter">
+<img src="../img/twitter.png" alt="twitter">
+</div>
+<div class=" pointed social-pic-item" id="google-plus">
+<img src="../img/googleplus.png" alt="google+">
+</div>
+<div class=" pointed social-pic-item" id="instagram">
+<img src="../img/instagram.png" alt="instagramm">
+</div>
+</div>
 </div>
  </div>
 <footer>
-
+<div id="anchor-button"><a href="#hat"><img src="../img/anchor.png" alt=""/></a></div>
+<span id="footer-text"> Жак-Ив Кусто, 1999. <a href="#"> Лицензионное соглашение </a></span>
 </footer>
 </body>
 </html>
